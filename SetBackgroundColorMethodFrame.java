@@ -3,7 +3,7 @@ package com.company;
 import javax.swing.*;
 import java.awt.*;
 
-class SetIconImageMethodJFrame{
+class SetBackgroundColorMethodJFrame{
     public static void main(String[] args){
         JFrame frame=new JFrame();
         frame.setVisible(true);
@@ -12,6 +12,7 @@ class SetIconImageMethodJFrame{
         frame.setTitle("My Frame");
         Image icon = Toolkit.getDefaultToolkit().getImage("E:\\programming\\Java_Swing\\src\\com\\company\\instagram.png");
         frame.setIconImage(icon);
-
+        Container c=frame.getContentPane();
+        c.setBackground(Color.red);
     }
 }
