@@ -36,6 +36,7 @@ class MyJButton{
         btn.setForeground(Color.cyan);
         btn.setBackground(Color.blue);
 
+
         Cursor cursor=new Cursor(Cursor.HAND_CURSOR);//creating the cursor object of Cursor class and setting the cursor type
         btn.setCursor(cursor);//setting the cursor to the button
 
