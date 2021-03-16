@@ -5,6 +5,7 @@ import java.awt.*;
 
 
 class MyJButton{
+    static JFrame frame;
     public static void main(String[]args){
         Container c=createFrame();
 
@@ -15,12 +16,12 @@ class MyJButton{
 
     }
     public static Container createFrame(){
-        JFrame frame=new JFrame();
+        frame=new JFrame();
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setBounds(100,100,1000,500);
-        frame.setVisible(true);
         Container c=frame.getContentPane();
         c.setLayout(null);
+        frame.setVisible(true);
         return c;
     }
     public static void CreateButton(Container c){
@@ -48,5 +49,6 @@ class MyJButton{
         btn1.setSize(icon.getIconWidth(),icon.getIconHeight());
         btn1.setLocation(100,150);
         c.add(btn1);
+        frame.setVisible(true);
     }
 }
