@@ -56,7 +56,6 @@ class MyFrame1 extends JFrame implements ActionListener {
             btn2.setForeground(Color.WHITE);
             btn3.setBackground(Color.CYAN);
         }
-
     }
 }
 
