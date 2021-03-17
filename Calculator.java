@@ -129,6 +129,7 @@ class CalculatorButton implements ActionListener{
         Font font=new Font("Arial",Font.BOLD,30);
         textField.resetKeyboardActions();
         textField.setFont((font));
+
         textField.setText(input);
         c.add(textField);
         return textField;
